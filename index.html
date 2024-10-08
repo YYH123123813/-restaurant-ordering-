@@ -83,3 +83,13 @@ git push origin main
     <button onclick="filterCategory('饮品')">饮品</button>
     <button onclick="filterCategory('主食')">主食</button>
 </div>
+function filterCategory(category) {
+    const items = document.querySelectorAll('.menu-item');
+    items.forEach(item => {
+        if (category === '全部' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
