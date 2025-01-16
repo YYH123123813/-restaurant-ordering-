@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的网站</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- 引入Google字体 -->
-</head>
 <body>
     <!-- 顶部导航栏 -->
     <header>
@@ -28,23 +19,17 @@
         </nav>
     </header>
 
-    <!-- 页面内容区域 -->
-    <section id="home">
+    <!-- 背景视频区域 -->
+    <section id="home" class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <h1>欢迎来到我的网站！</h1>
     </section>
 
-    <section id="login">
-        <h2>登录页面</h2>
-    </section>
-
-    <section id="support">
-        <h2>技术支持页面</h2>
-    </section>
-
-    <section id="feedback">
-        <h2>反馈页面</h2>
-    </section>
-
+    <!-- 如果其他 section 不需要，则删除 -->
+    <!-- <section id="content">其他内容</section> -->
+    
     <script src="scripts.js"></script>
 </body>
-</html>
