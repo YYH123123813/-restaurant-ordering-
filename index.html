@@ -1,41 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>eGo.com - 首页</title>
-  <link rel="stylesheet" href="styles.css"> <!-- 引入外部CSS -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- 引入Google字体 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网站</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- 引入Google字体 -->
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">
-        <a href="#">eGo</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">首页</a></li>
-        <li><a href="#">产品</a></li>
-        <li><a href="#">关于我们</a></li>
-        <li><a href="#">联系</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- 顶部导航栏 -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#login">登录</a></li>
+                <li><a href="#support">技术支持</a></li>
+                <li><a href="#feedback">反馈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">语言选择</a>
+                    <div class="dropdown-content">
+                        <a href="#">中文</a>
+                        <a href="#">English</a>
+                        <a href="#">日本語</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h1>欢迎来到 eGo</h1>
-      <p>我们致力于为您提供最佳的产品和服务。</p>
-      <a href="#" class="cta-button">了解更多</a>
+    <!-- 页面内容区域 -->
+    <section id="home">
+        <h1>欢迎来到我的网站！</h1>
     </section>
 
-    <!-- 添加更多内容区域 -->
-  </main>
+    <section id="login">
+        <h2>登录页面</h2>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 eGo. 版权所有。</p>
-  </footer>
+    <section id="support">
+        <h2>技术支持页面</h2>
+    </section>
 
-  <script src="scripts.js"></script> <!-- 引入外部JavaScript -->
+    <section id="feedback">
+        <h2>反馈页面</h2>
+    </section>
+
+    <script src="scripts.js"></script> <!-- 引入JS -->
 </body>
 </html>
