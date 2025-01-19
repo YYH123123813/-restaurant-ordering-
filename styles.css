@@ -1,32 +1,146 @@
-<body>
-    <!-- 顶部导航栏 -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">首页</a></li>
-                <li><a href="#login">登录</a></li>
-                <li><a href="#support">技术支持</a></li>
-                <li><a href="#feedback">反馈</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">语言选择</a>
-                    <div class="dropdown-content">
-                        <a href="#">中文</a>
-                        <a href="#">English</a>
-                        <a href="#">日本語</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+/* 基本布局 */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-    <!-- 背景视频区域 -->
-    <section id="home" class="video-background">
-        <video autoplay muted loop id="bg-video">
-            <source src="your-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <h1>欢迎来到我的网站！</h1>
-    </section>
+/* 顶部导航栏 */
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-    <script src="scripts.js"></script>
-</body>
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* 下拉菜单样式 */
+.dropdown {
+    position: relative;
+}
+
+.dropdown .dropbtn {
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* 鼠标悬停时显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none; /* 默认隐藏 */
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* 背景视频部分 */
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* 页面文字 */
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* 底部导航 */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#footer ul li a:hover {
+    text-decoration: underline;
+}
