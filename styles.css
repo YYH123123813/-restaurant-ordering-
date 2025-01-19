@@ -6,9 +6,39 @@ body {
     background-color: #f4f4f4;
 }
 
+/* 背景视频区域 */
+.video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+/* 页面文字 */
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 /* 顶部导航栏 */
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5); /* 透明背景 */
     padding: 20px 0;
     color: white;
     text-align: center;
@@ -86,36 +116,6 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
     background-color: #ddd;
-}
-
-/* 背景视频部分 */
-.video-background {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    background: #000;
-}
-
-#bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-}
-
-/* 页面文字 */
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3rem;
-    text-align: center;
-    font-weight: bold;
 }
 
 /* 底部导航 */
