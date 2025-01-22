@@ -1,0 +1,45 @@
+<!-- create-route.html -->
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创建旅游路线</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 引入你现有的样式文件 -->
+</head>
+<body>
+    <section id="home" class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="your-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>创建您的旅游路线</h1>
+    </section>
+
+    <section id="create-route">
+        <h2>选择目的地和交通工具</h2>
+        <!-- 你可以在这里添加创建旅游路线的内容 -->
+        <div class="module-container">
+            <div class="module" id="destination">
+                <h3>选择目的地</h3>
+                <div class="module-item" data-item="Paris">巴黎</div>
+                <div class="module-item" data-item="Tokyo">东京</div>
+                <div class="module-item" data-item="NewYork">纽约</div>
+            </div>
+            <div class="module" id="transportation">
+                <h3>选择交通工具</h3>
+                <div class="module-item" data-item="Flight">飞机</div>
+                <div class="module-item" data-item="Train">火车</div>
+                <div class="module-item" data-item="Car">自驾车</div>
+            </div>
+            <div class="module" id="accommodation">
+                <h3>选择住宿</h3>
+                <div class="module-item" data-item="Hotel">酒店</div>
+                <div class="module-item" data-item="Hostel">旅馆</div>
+                <div class="module-item" data-item="Airbnb">Airbnb</div>
+            </div>
+        </div>
+        <button id="save-route">保存您的路线</button>
+    </section>
+</body>
+</html>
