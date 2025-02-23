@@ -148,6 +148,17 @@ nav ul li a:hover {
     margin-bottom: 15px;
 }
 
+/* 下拉菜单样式 */
+#destination select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* 模块项样式 */
 .module-item {
     background-color: #ddd;
     padding: 10px;
@@ -157,12 +168,17 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
+.module-item.selected {
+    background-color: #4CAF50; /* 高亮选中的项 */
+    color: white;
+}
+
 .module-item:hover {
     background-color: #b7b7b7;
 }
 
 /* 创建旅游路线按钮 */
-#save-route {
+#save-route, #clear-markers {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #333;
@@ -173,7 +189,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-#save-route:hover {
+#save-route:hover, #clear-markers:hover {
     background-color: #444;
 }
 
@@ -215,6 +231,7 @@ nav ul li a:hover {
         flex-direction: column;
     }
 }
+
 /* 地图容器优化 */
 #map-container {
     border-radius: 15px;
