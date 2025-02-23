@@ -215,4 +215,20 @@ nav ul li a:hover {
         flex-direction: column;
     }
 }
+/* 地图容器优化 */
+#map-container {
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
 
+/* 高德地图控件样式覆盖 */
+.amap-controls {
+    right: 15px !important;
+    bottom: 15px !important;
+}
+
+.amap-scalecontrol {
+    left: 15px !important;
+    bottom: 15px !important;
+}
