@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的旅游平台</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- 使用Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- 背景视频 -->
     <section id="home" class="video-background">
         <video autoplay muted loop id="bg-video">
@@ -44,9 +43,34 @@
         <div class="module-container">
             <div class="module" id="destination">
                 <h3>选择目的地</h3>
-                <div class="module-item" data-item="Paris">巴黎</div>
-                <div class="module-item" data-item="Tokyo">东京</div>
-                <div class="module-item" data-item="NewYork">纽约</div>
+                <select id="destination-select">
+                    <option value="">请选择目的地</option>
+                    <!-- 中国城市（按拼音排序） -->
+                    <option value="Beijing">[中国] 北京</option>
+                    <option value="Changsha">[中国] 长沙</option>
+                    <option value="Chengdu">[中国] 成都</option>
+                    <option value="Chongqing">[中国] 重庆</option>
+                    <option value="Fuzhou">[中国] 福州</option>
+                    <option value="Guangzhou">[中国] 广州</option>
+                    <option value="Hangzhou">[中国] 杭州</option>
+                    <option value="Jinan">[中国] 济南</option>
+                    <option value="Kunming">[中国] 昆明</option>
+                    <option value="Nanjing">[中国] 南京</option>
+                    <option value="Shanghai">[中国] 上海</option>
+                    <option value="Shenzhen">[中国] 深圳</option>
+                    <option value="Tianjin">[中国] 天津</option>
+                    <option value="Wuhan">[中国] 武汉</option>
+                    <option value="Xi’an">[中国] 西安</option>
+                    <!-- 国外城市（按英文排序） -->
+                    <option value="CapeTown">[国外] 开普敦</option>
+                    <option value="Dubai">[国外] 迪拜</option>
+                    <option value="London">[国外] 伦敦</option>
+                    <option value="NewYork">[国外] 纽约</option>
+                    <option value="Paris">[国外] 巴黎</option>
+                    <option value="Rio">[国外] 里约热内卢</option>
+                    <option value="Sydney">[国外] 悉尼</option>
+                    <option value="Tokyo">[国外] 东京</option>
+                </select>
             </div>
             <div class="module" id="transportation">
                 <h3>选择交通工具</h3>
@@ -61,6 +85,7 @@
                 <div class="module-item" data-item="Airbnb">Airbnb</div>
             </div>
         </div>
+        <div id="map-container" style="width: 100%; height: 400px; margin-top: 20px;"></div>
         <button id="save-route">保存您的路线</button>
     </section>
 
@@ -76,10 +101,8 @@
         </ul>
     </section>
 
-    <!-- 引入JS -->
+    <!-- 引入高德地图和JS -->
+    <script src="https://webapi.amap.com/maps?v=2.0&key=917c96e443a6e9e2e06e61702489f"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
-<div id="map-container" style="width: 100%; height: 400px; margin-top: 20px;"></div>
-<script src="https://webapi.amap.com/maps?v=2.0&key=917c96e443a6e9e2e06e61702489f"></script>
-<script src="scripts.js"></script>
